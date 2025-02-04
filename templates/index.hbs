@@ -1,6 +1,14 @@
-
 <div class="container-fluid m-2 p-5 bg-primary text-center">
     <h1>Les Marvels</h1>
+    <div>
+            {{#each characters}}
+            <div>
+                <img src="{{imageUrl}}" alt="{{name}}">
+                <h2>{{name}}</h2>
+                <p>{{description}}</p>
+            </div>
+            {{/each}}
+        </div>
 </div>
 <div class="container m-2 p-5 bg-primary  text-center">
     <h2>Mes comics</h2>
